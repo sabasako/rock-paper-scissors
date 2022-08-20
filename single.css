@@ -1,0 +1,315 @@
+/*********************/
+/*    Meyer Reset    */
+/*********************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*************************/
+/*   Code starts here    */
+/*************************/
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(Imgs/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #f1f3f5;
+    position: relative;
+}
+
+.container{
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+.header-h1{
+    font-size: 4.8rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+.header-p{
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.header-btn:link, .header-btn:visited{
+    font-size: 3.2rem;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    color: #fa5252;
+    transition: all 300ms;
+}
+
+.header-btn:hover, .header-btn:active{
+    color: #fa5252b6;
+}
+
+.icon{
+    width: 4.8rem;
+    height: auto;
+    stroke: #fa5252;
+}
+
+.btn{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 3.4rem;
+    cursor: pointer;
+    margin-top: 5rem;
+    color: #fa5252;
+}
+
+.btn-div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rem;
+}
+
+.game-div{
+    border: 3px solid #fa5252;
+    margin-top: 7rem;
+    padding: 5rem;
+}
+
+.imgs-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 6rem;
+}
+
+.game-imgs{
+    width: 12rem;
+    height: auto;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.game-imgs-0, .game-imgs-1, .game-imgs-2{
+    width: 12rem;
+    height: auto;
+    /* cursor: pointer; */
+    /* transition: all 300ms; */
+}
+
+.game-imgs:hover, .game-imgs:active{
+    transform: scale(1.5);
+}
+
+#game-imgs-0, #game-imgs-1, #game-imgs-2{
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+#game-imgs-0:hover, #game-imgs-0:active, #game-imgs-1:hover, #game-imgs-1:active, #game-imgs-2:hover, #game-imgs-2:active{
+    transform: scale(1.5);
+} 
+
+.game-h1{
+    font-size: 3.2rem;
+    justify-self: center;
+}
+
+.imgs-container{
+    display: flex;
+    gap: 15rem;
+    justify-content: center;
+}
+
+.weapon-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+}
+
+.hidden{
+    display: none;
+}
+
+/***************************/
+/*        Scoreboard       */
+/***************************/
+
+.scoreboard{
+    display: flex;
+    gap: 5rem;
+    grid-column: 1 / 3;
+    justify-self: center;
+}
+
+.score{
+    font-size: 2.4rem;
+}
+
+.score-text{
+    position: absolute;
+    color: #fa5252;
+    left: 50%;
+    transform: translate(-50%, 2rem);
+}
+
+.game-over{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #22202c;
+    padding: 7rem 14rem;
+    z-index: 2;
+    /* display: none; */
+}
+.background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #22202c82;
+    z-index: 1;
+    /* display: none; */
+}
+
+.over-text{
+    font-size: 4rem;
+    color: #fa5252;
+    text-align: center;
+}
+.again:link, .again:visited{
+    display: block;
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: 4rem;
+    color: #fa5252;
+    background-color: #312e3d;
+    padding: 2rem 4rem;
+    transition: all 300ms;
+}
+
+.again:hover, .again:active{
+    color: #fa525291;
+}
+
+
+.close-outline{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    cursor: pointer;
+    color: #fa5252;
+    transition: all 300ms;
+}
+
+.close-outline:hover, .close-outline:active{
+    color: #fa525291;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    color: #f1f3f5;
+    /* position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    transform: translateX(-50%); */
+    font-size: 2.4rem;
+}
+
+footer{
+    margin-top: 1rem; 
+    display: flex;
+    justify-content: center;
+}
+
+.github-logo-a:link, .github-logo-a:visited{
+    margin-left: 1rem;
+    color: #f1f3f5;
+    transition: all 500ms;
+}
+.github-logo-a:hover, .github-logo-a:active{
+    transform: rotate(360deg);
+}
+
+.full-screen{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(255, 255, 255, 0.473); */
+    cursor: pointer;
+}
+
+.single-btn{
+    border: 1px solid #fa5252;
+    box-sizing: content-box;
+    padding: 1rem;
+}
+
+
+.single-a {
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
