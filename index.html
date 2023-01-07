@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>  
+    <header class="header">
+        <div class="container">
+            <h1 class="header-h1">Rock Paper Scissors</h1>
+            <a href="https://en.wikipedia.org/wiki/Rock_paper_scissors" class="header-btn" target=”_blank”>How to play</a>
+        </div>
+    </header>
+    <section class="game">
+        <div class="game-div container">
+            <div class="weapon-div">
+                <h1 class="game-h1">Choose Your Weapon:</h1>
+                <h1 class="game-h1 game-h1-c">Computer:</h1>
+                <div class="scoreboard">
+                    <p class="your-score">0</p>
+                    <p class="computer-score">0</p>
+                </div>
+            </div>
+            <h1 class="game-h1 score-text"></h1>
+            <div class="imgs-container">
+                <div class="imgs-div">
+                <img class="game-imgs" src="Imgs/rock.png" alt="rock Cartoon Picture">
+                <img class="game-imgs" src="Imgs/paper.png" alt="paper Cartoon Picture">
+                <img class="game-imgs" src="Imgs/scissors.png" alt="scissors Cartoon Picture">
+            </div>
+            <div class="imgs-div">
+                <img class="game-imgs-computer" src="Imgs/rock.png" alt="rock Cartoon Picture">
+                <img class="game-imgs-computer" src="Imgs/paper.png" alt="paper Cartoon Picture">
+                <img class="game-imgs-computer" src="Imgs/scissors.png" alt="scissors Cartoon Picture">
+            </div>
+        </div>
+
+    </section>
+    <div class="game-over hidden">
+        <p class="over-text">You Won!</p>
+        <a href="#" class="again">Play again</a>
+        <ion-icon class='close-outline' name="close-outline"></ion-icon>
+    </div>
+    <div class="background hidden"></div>
+    <footer>
+        <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> sabasako<a href="https://github.com/sako151" class="github-logo-a" target="_blank"><ion-icon class="github-logo" name="logo-github"></ion-icon></a></p>
+    </footer>
+    <div class="full-screen hidden"></div>
+
+<!------------------->
+<!------------------->
+<!------------------->
+<!------------------->
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
